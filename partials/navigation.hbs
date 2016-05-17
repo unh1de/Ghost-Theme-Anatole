@@ -1,0 +1,6 @@
+<div class="nav">
+    {{#foreach navigation}}
+            <li><a href="{{url absolute="true"}}" {{#if current}}class="current"{{/if}}>{{label}}</a></li>
+    {{/foreach}}
+            <li><a href="{{@blog.url}}/rss/"><i class="nc-icon-mini social_logo-rss"></i></a></li>
+</div>

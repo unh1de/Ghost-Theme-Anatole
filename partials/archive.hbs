@@ -1,0 +1,16 @@
+<div class="archive animated fadeInDown">
+   <ul class="list-with-title">
+     <ul class="listing">
+      {{#get "posts" limit="all"}}
+          {{#foreach posts}}
+           <div class="listing-item">
+             <div class="listing-post"><a href="{{url}}" title="{{title}}">{{title}}</a>
+               <div class="post-time"><span class="date">{{date format='YYYY-MM-DD'}}</span>
+               </div>
+             </div>
+           </div>
+          {{/foreach}}
+      {{/get}}
+      </ul>
+   </ul>
+</div>

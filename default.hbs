@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/base.css"}}" />
+    <link type="text/css" rel="stylesheet" href="{{asset "css/style.css"}}" />
+    <link type="text/css" rel="stylesheet" href="//cdn.jorb.me/web/nucleo-mini.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/highlight.js/9.3.0/styles/solarized-dark.min.css"/>
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+</head>
+<body>
+
+
+    {{{body}}}
+    
+</div>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+     <script type="text/javascript">
+     var duoshuoQuery = {short_name:"jorb"};
+     (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+     })();
+     </script>
+    <script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+    <script >hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

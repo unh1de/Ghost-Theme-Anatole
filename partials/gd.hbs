@@ -1,0 +1,39 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+{{#if image}}<style>.sidebar{background-image: url({{image}});background-color: #fff;background-repeat: no-repeat;background-position: center center;background-size: cover;text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3)!important;color: #fff!important;}.sidebar a,.sidebar p{color: #fff!important;text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);}</style>{{/if}}
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    {{navigation}}
+    </div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+            <div class="post-page">
+                <div class="post animated fadeInDown">
+                    <div class="post-title"><h3>{{title}}</h3></div>
+                    <div class="post-content">
+                         {{content}}
+                    </div>
+
+                  <div class="post-footer">
+                      <div class="meta">
+                          <div class="info"><i class="fa fa-calendar"></i><span class="date">{{date format='YYYY-MM-DD'}}</span></div>
+                      </div>
+                  </div>
+
+                  <div id="pl">
+                      <div class="ds-thread" data-thread-key="{{slug}}" data-title="{{{title}}}" data-url="{{url absolute="true"}}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{{/post}}

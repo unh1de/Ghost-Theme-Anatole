@@ -1,0 +1,13 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+{{! The big featured header }}
+{{> "header"}}
+{{! The main content area on the homepage }}
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    {{navigation}}
+    </div>
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+    </div>
+</div>

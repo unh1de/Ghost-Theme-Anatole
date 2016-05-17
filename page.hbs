@@ -1,0 +1,58 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+{{#if image}}<style>.sidebar{background-image: url({{image}});background-color: #fff;background-repeat: no-repeat;background-position: center center;background-size: cover;text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3)!important;color: #fff!important;}.sidebar a,.sidebar p{color: #fff!important;text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);}</style>{{/if}}
+{{> "header"}}
+<div class="main">
+    <div class="page-top animated fadeInDown">
+    {{navigation}}
+
+    <div class="information">
+              <div class="back_btn">
+                <li><a onclick="window.history.go(-1)"  class="nc-icon-mini arrows-1_minimal-left"></a>
+                </li>
+              </div>
+              <div class="avatar"><img src="{{@blog.cover}}">
+              </div>
+    </div>
+    </div>
+
+    <div class="autopagerize_page_element">
+        <div class="content">
+            <div class="post-page {{title}}">
+                <div class="post animated fadeInDown">
+                    <div class="post-content">
+                         {{content}}
+                    </div>
+
+               		<div class="post-footer">
+                    	<div class="meta">
+                        <div class="info">
+                            <i class="nc-icon-mini ui-1_calendar-60"></i>
+                            <span class="date">{{date format='YYYY-MM-DD'}}</span>
+                            <i class="nc-icon-mini ui-2_chat-round"></i>
+                            <a href="{{url}}#pl"><span class="ds-thread-count" data-thread-key="{{slug}}" data-count-type="comments"></span></a>
+                            <i class="nc-icon-mini shopping_tag"></i>
+                            {{tags separator=""}}
+                        </div>
+                  		</div>
+               		</div>
+
+               		<div id="pl">
+                    	<div class="ds-thread" data-thread-key="{{slug}}" data-title="{{{title}}}" data-url="{{url absolute="true"}}"></div>
+                  </div>
+
+
+                  {{> "pagination"}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{{/post}}

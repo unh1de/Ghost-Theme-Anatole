@@ -1,0 +1,25 @@
+<div class="autopagerize_page_element">
+  <div class="content">
+{{#foreach posts}}
+    <div class="post animated fadeInDown">
+        <div class="post-title"><h3><a href="{{url}}">{{{title}}}</a></h3></div>
+        <div class="post-content">
+            <div class="p_part"><p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p></p></div>
+            <div class="p_part"><p></p></div>
+        </div>
+        <div class="post-footer">
+            <div class="meta">
+              <div class="info">
+                  <i class="nc-icon-mini ui-1_calendar-60"></i>
+                  <span class="date">{{date format='YYYY-MM-DD'}}</span>
+                  <i class="nc-icon-mini ui-2_chat-round"></i>
+                  <a href="{{url}}#pl"><span class="ds-thread-count" data-thread-key="{{slug}}" data-count-type="comments"></span></a>
+                  <i class="nc-icon-mini shopping_tag"></i>
+                  {{tags separator=""}}
+              </div>
+            </div>
+        </div>
+    </div>
+{{/foreach}}
+  </div>
+</div>
