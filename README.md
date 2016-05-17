@@ -14,10 +14,22 @@
 	
 ### 说明
 1. 由于Ghost限制问题，部分页面是使用 Ghost API 实现的，需要在 `ghost后台 -> 实验功能 -> 开放 API` 勾选此选项。
-2. 关于页面，需要在Ghost后台添加一个独立页面，并设置url为 `about` 方可启用。（如下图）
-3. 归档页面，需要在Ghost后台添加一个独立页面，并设置url为 `archived`方可启用。（如下图）
-
-![ru](http://cdn.jorb.me/image/0/e2/fa33edd66c9813535cf55dffce61f.png)
+2. 关于页面，需要在Ghost后台添加一个独立页面，并设置url为 `about` 方可启用。
+3. 归档页面，需要在Ghost后台添加一个独立页面，并设置url为 `archived`方可启用。
+4. 如使用多说留言 请在 `ghost后台 -> 插入代码 -> 页脚` 加入下面代码，请添加自己的多说ID。
+```
+<script type="text/javascript">
+     var duoshuoQuery = {short_name:"你的多说ID"};//替换为您的多说ID
+     (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+     })();
+     </script>
+```
 
 
 ### 效果
