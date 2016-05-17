@@ -1,12 +1,10 @@
 # Anatole Ghost Theme
 
----
 
-Anatole 是由 [hi-caicai](https://github.com/hi-caicai) 制作的一款 Farbox 主题，原地址在： https://github.com/hi-caicai/farbox-theme-Anatole
 
+>Anatole 是由 [hi-caicai](https://github.com/hi-caicai) 制作的一款 Farbox 主题，原地址在： https://github.com/hi-caicai/farbox-theme-Anatole
 然后由 [YJK](https://github.com/ygbhf) 植到了 Ghost [地址] (https://github.com/hi-caicai/farbox-theme-Anatole) ,但是非完美移植，缺少点东西，我稍作修改了下
 
----
 ### 添加修改了
 1.  Tag 添加
 2.  代码高亮
