@@ -20,7 +20,7 @@ html {
       h1, h2, h3, h4, h5, h6 {
         text-rendering: optimizeLegibility;
         line-height: 1;
-        margin: 2rem 0; }
+        margin: 1rem 0; }
 
         h1 {
           font-size: 2.1rem;
@@ -37,10 +37,10 @@ html {
                 font-size: 1.3rem; }
 
                 h5 {
-                  font-size: 1.3rem; }
+                  font-size: 1.1rem; }
 
                   h6 {
-                    font-size: 1.3rem; }
+                    font-size: 1rem; }
 
                     img {
                       max-width: 100%;

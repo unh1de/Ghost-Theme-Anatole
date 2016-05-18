@@ -31,11 +31,12 @@
 </script>
 ```
 
+> 如果有问题Bug请联系 hi#jorb.me
 
 ### 效果
-以后的修改如添加也只会是还原作者[hi-caicai][1]的设计。
-预览地址： http://jorb.me/
-Mac下的预览：
+以后的修改如添加也只会是还原作者[hi-caicai][1]的设计。       
+预览地址： http://jorb.me/   
+Mac下的预览：   
 ![](http://cdn.jorb.me/image/5/83/40abc89fcd9fa6561ae75ca64e91e.png)
 
 
