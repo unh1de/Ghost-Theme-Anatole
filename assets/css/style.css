@@ -313,12 +313,12 @@ blockquote {
 		}
 .post .post-content h4 {
 			color: #5F5F5F;
-			font-size:16px;
+			
 			font-family: Open Sans;
 
 		}
 .post .post-content img {
-			max-width: 100%; max-height: 600px;
+			max-width: 100%; 
 			border-radius: 3px; 
 		}
 
@@ -655,11 +655,7 @@ a.btn {
 	}
 	
 }
-.view strong{
-	float: right;
-	font-weight: normal;
-	color: #C5C5C5;
-}
+
 
 .content .post-page .post .view > p > a{
   color: #8F8F8F ;
